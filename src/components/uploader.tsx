@@ -1,4 +1,3 @@
-import { IMAGEN_NO_DISPONIBLE } from "@/lib/constants";
 import { LoadingOutlined, PlusOutlined } from "@ant-design/icons";
 import { Image, Upload } from "antd";
 import { UploadProps } from "antd/lib";
@@ -15,7 +14,7 @@ export function Uploader({ labelAdd = "Subir Imagen", labelEdit = "Actualizar Im
   return (
     <div className="flex gap-2">
       {imageUrl && (
-        <Image height={100} width={100} src={imageUrl} fallback={IMAGEN_NO_DISPONIBLE} />
+        <Image height={100} width={100} src={imageUrl} />
       )}
 
       <Upload

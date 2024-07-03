@@ -1,6 +1,7 @@
+import { DEFAULT_PAGINACION, IRequestParams } from "@/constants";
 import { useSortColumns } from "@/hooks/useSortColumns";
-import { DEFAULT_PAGINACION, IRequestParams } from "@/lib/constants";
-import { TPaginacion } from "@/lib/types/responses";
+import { TPaginacion } from "@/types";
+
 import { Table, TablePaginationConfig } from "antd";
 import { ColumnsType } from "antd/es/table";
 import React from "react";
