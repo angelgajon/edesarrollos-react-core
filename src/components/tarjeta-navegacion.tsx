@@ -1,7 +1,13 @@
 import { Button, Typography } from "antd";
 import React from "react";
 
-export function TarjetaNavegacion({ titulo, descripcion, icon, onClick }: { titulo?: string, descripcion?: React.ReactNode, icon?: React.ReactNode, onClick?: () => void }) {
+export type TarjetaNavegacionProps = { 
+  titulo?: string, 
+  descripcion?: React.ReactNode, 
+  icon?: React.ReactNode, 
+  onClick?: () => void 
+};
+export function TarjetaNavegacion({ titulo, descripcion, icon, onClick }: TarjetaNavegacionProps) {
 
   const clonedIcon = icon ? React.cloneElement(icon as React.ReactElement, { size: 72 }) : null;
 
