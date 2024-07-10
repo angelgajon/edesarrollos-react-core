@@ -11,10 +11,17 @@ export default meta;
 
 type Story = StoryObj<typeof TarjetaNavegacion>;
 
-export const Primary: Story = {
-  args: {
-    titulo: 'Ejemplo de Tarjeta',
-    icon: <AlertOutlined />
-  }
+export const Default: Story = {
+  decorators: [
+    (Story) => (
+      <div className="w-full">
+        <Story args={{
+          titulo: 'Ejemplo de Tarjeta',
+          icon: <AlertOutlined />,
+          descripcion: 'Ejemplo de descripción',
+        }} />
+      </div>
+    )
+  ]
 }
 

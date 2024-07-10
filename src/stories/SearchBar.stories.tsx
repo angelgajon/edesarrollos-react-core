@@ -10,9 +10,13 @@ export default meta;
 
 type Story = StoryObj<typeof SearchBar>;
 
-export const Primary: Story = {
-  args: {
-    placeholder: 'Buscar...'
-  }
+export const Default: Story = {
+  decorators: [
+    (Story) => (
+      <div className="w-full">
+        <Story args={{ placeholder: 'Buscar...' }} />
+      </div>
+    )
+  ]
 }
 

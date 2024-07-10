@@ -1,7 +1,5 @@
 import { TPaginacion } from "@/types";
-import imagenNoDisponible from "@/assets/imagen-no-disponible.png";
 
-export const IMAGEN_NO_DISPONIBLE = imagenNoDisponible;
 export const ESTILOS = {
   INPUT_SOLO_LECTURA: {
     border: 'none',
